@@ -1,7 +1,7 @@
 Config = {}
 
 -- Framework : 'esx' | 'qb' | 'qbox'
-Config.Framework = 'qb'
+Config.Framework = 'esx'
 -- ESXMode : 'old' | 'new'  (ignoré si Framework != 'esx')
 Config.ESXMode   = 'new'
 
@@ -11,7 +11,11 @@ Config.LockKey           = 'U'
 Config.LockKeyEnabled    = true
 Config.ox_target         = false
 
--- ESX   : 'owned_vehicles' / 'identifier'
--- QB/QBox: 'player_vehicles' / 'citizenid'
-Config.VehiclesTable       = 'player_vehicles'
-Config.VehiclesOwnerColumn = 'citizenid'
+-- Auto-configuré selon le Framework (modifiable manuellement si besoin)
+if Config.Framework == 'esx' then
+    Config.VehiclesTable       = 'owned_vehicles'
+    Config.VehiclesOwnerColumn = 'identifier'
+else
+    Config.VehiclesTable       = 'player_vehicles'
+    Config.VehiclesOwnerColumn = 'citizenid'
+end
