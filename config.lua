@@ -5,8 +5,8 @@ Config.Framework = 'esx'
 -- ESXMode : 'old' | 'new'  (ignoré si Framework != 'esx')
 Config.ESXMode   = 'new'
 
-Config.TerritoryVehicles = true   -- Activer les véhicules crew (22_territory)
-Config.RentalVehicles    = true   -- Activer les véhicules de location (22_rental)
+Config.TerritoryVehicles = false   -- Activer les véhicules crew (22_territory)
+Config.RentalVehicles    = false   -- Activer les véhicules de location (22_rental)
 Config.LockKey           = 'U'
 Config.LockKeyEnabled    = true
 Config.ox_target         = false
