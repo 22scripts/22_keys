@@ -14,7 +14,7 @@ Config.ox_target         = false
 -- Auto-configuré selon le Framework (modifiable manuellement si besoin)
 if Config.Framework == 'esx' then
     Config.VehiclesTable       = 'owned_vehicles'
-    Config.VehiclesOwnerColumn = 'identifier'
+    Config.VehiclesOwnerColumn = 'OWNER'
 else
     Config.VehiclesTable       = 'player_vehicles'
     Config.VehiclesOwnerColumn = 'citizenid'
